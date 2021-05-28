@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.myapplication.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_nineFragment"
+            app:destination="@id/nineFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nineFragment"
+        android:name="com.example.myapplication.fragments.NineFragment"
+        android:label="fragment_nine"
+        tools:layout="@layout/fragment_nine" />
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.myapplication.fragments.FourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" />
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.example.myapplication.fragments.FiveFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five" />
+</navigation>
